@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+.bluetext {
+  color: var(--active-link-color);
+}
+
 ul,
 li {
   list-style: none;
@@ -198,22 +202,24 @@ h1.a {
   background-size: cover;
 }
 
-.zakazuslugi {
+.btn {
   font-family: 'Roboto ', sans-serif;
   font-style: Bold;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 6%;
-  margin: 0 auto;
   width: 200px;
   height: 50px;
   display: block;
-  border: 0;
   text-align: center;
   color: var(--white-color);
   font-weight: 700;
   background-color: var(--active-link-color);
+  margin: 0 auto;
   border-radius: 4px;
+}
+
+.zakazuslugi {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 6%;
   transform: color, background-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -727,7 +733,6 @@ p.portfolio {
   height: 30px;
   border: 1px solid #0000001a;
   border-radius: 50%;
-  background-color: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,4 +754,87 @@ p.portfolio {
 
 .modal-close:hover .buttonclosemodal {
   fill: var(--white-color);
+}
+
+.modal-conteiner {
+  padding: 40px;
+  position: relative;
+}
+
+.modal-h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 3%;
+  margin-bottom: 12px;
+}
+
+.form-conteiner-input {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  padding-left: 40px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  border-color: var(--active-link-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--active-link-color);
+}
+
+.text-area-input {
+  height: 120px;
+  font-size: 12px;
+  line-height: calc(14.06 / 12);
+  font-family: 'Roboto ', sans-serif;
+  padding: 12px 0 0 16px;
+  resize: none;
+}
+
+.text-area-input:focus {
+  border-color: var(--active-link-color);
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.checkboxtext {
+  font-size: 14px;
+  line-height: 146%;
+}
+
+.modal-submit-button {
+  font-style: 16px;
+  line-height: 160%;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.input-icon {
+  fill: black;
+  position: absolute;
+  left: 12px;
+  top: 35px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dogovor-link {
+  color: var(--active-link-color);
+}
+
+.checkbox-div {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
