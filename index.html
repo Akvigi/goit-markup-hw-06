@@ -375,29 +375,37 @@
                     <div class="form-conteiner-input">
                         <label class="modal-label">
                             Имя
+                            <div class="icon-relative">
                             <input class="modal-input" type="text" name="name">
-                        <svg class="input-icon" width= "18px" height = "18px">
-                            <use href="./images/icons.svg#icon-person"></use>
-                            </svg>
+                                <svg class="input-icon" width= "18px" height = "18px">
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            </div>
                             </label>
                     </div>
                     <div class="form-conteiner-input">
                         <label class="modal-label">
                             Телефон
+                            <div class="icon-relative">
                             <input class="modal-input" type="tel" name="telephone">
-                            <svg class="input-icon " width= "18px" height = "18px">
-                                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                            </svg>
+                                <svg class="input-icon " width= "18px" height = "18px">
+                                    <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                                </svg>
+                            </div>
                         </label>
                     </div>
                     <div class="form-conteiner-input">
-                        <label class="modal-label">Почта<input class="modal-input" type="email" name="mail">
-                            <svg class="input-icon" width= "18px" height = "18px">
-                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                            </svg>
+                        <label class="modal-label">
+                            Почта
+                            <div class="icon-relative">
+                            <input class="modal-input" type="email" name="mail">
+                                <svg class="input-icon" width= "18px" height = "18px">
+                                    <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                                </svg>
+                            </div>
                         </label>
                     </div>
-                    <div class="form-conteiner-input">
+                    <div class="form-conteiner-input-textarea">
                         <label class="modal-label">
                             Комментарий
                             <textarea placeholder="Комментарий" 
@@ -407,13 +415,18 @@
                         </label>
                     </div>
                     <div class="checkbox-div">
-                        <label class="checkbox-div">
                             <input 
                             class="modal-checkbox visually-hidden" 
                             type="checkbox" 
                             name="policy"
                             id="policy">
-                            <span class="checkboxtext">Соглашаюсь с рассылкой и принимаю <a href="" class="link dogovor-link"> Условия договора</a></span>
+                        <label for="policy" class="checkbox-text">
+                            <span>
+                                <svg class="check-icon" width="16px" height="15px">
+                                    <use href="./images/icons.svg#icon-galochka"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю <a href="" class="link dogovor-link"> Условия договора</a>
                         </label>
                     </div>
                     <button type="submit" class="btn modal-submit-button">Отправить</button>
